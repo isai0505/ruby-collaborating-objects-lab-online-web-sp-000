@@ -51,7 +51,7 @@ class Song
 
   def artist_name=(name)
       if (self.artist.nil?)
-        self.artist = Artist.find(name)
+        self.artist = Artist.create_by(name)
       else
         self.artist.name = name
       end
