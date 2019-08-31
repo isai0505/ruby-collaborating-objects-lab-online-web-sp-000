@@ -36,6 +36,10 @@ class Song
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
   def self.new_by_filename(filename)
     splitname = filename.split(" - ")
     self.new(split_name[1])
