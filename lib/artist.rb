@@ -53,7 +53,7 @@ class Artist
   end
 
   def save
-    @@all < selfend
+    @@all < self
   end
 
 end
